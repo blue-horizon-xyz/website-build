@@ -7,8 +7,10 @@
    CONFIG — the only things you normally edit
    ------------------------------------------------------------ */
 
-// Team section: 'anonymous' (leadership-style, no names) or 'named'.
-// Flip this single value to switch the live site.
+// Team section display mode. Only the 'anonymous' (leadership-style, no names)
+// markup ships in index.html — the named cards were removed from source so
+// founder names aren't exposed to crawlers. To go 'named': restore the
+// .team-named block from git history (pre-2026-05-31) AND set this to "named".
 const TEAM_MODE = "anonymous";
 
 // Web3Forms access key. Get one free at https://web3forms.com (enter
