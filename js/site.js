@@ -11,14 +11,6 @@
 // Flip this single value to switch the live site.
 const TEAM_MODE = "anonymous";
 
-// LinkedIn profile URLs — used only when TEAM_MODE === 'named'.
-// Replace the placeholders with real profile URLs.
-const LINKEDIN = {
-  "chun-li":        "https://www.linkedin.com/in/REPLACE-ME",
-  "yves-lemaire":   "https://www.linkedin.com/in/REPLACE-ME",
-  "antoine-girard": "https://www.linkedin.com/in/REPLACE-ME",
-};
-
 // Web3Forms access key. Get one free at https://web3forms.com (enter
 // contact@blue-horizon.xyz, confirm once). Paste the key here.
 // While left as the placeholder, the form falls back to a mailto: draft.
@@ -66,16 +58,11 @@ function initMobileNav() {
   nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", close));
 }
 
-/* Apply team display mode + wire LinkedIn URLs */
+/* Apply team display mode (anonymous / named) */
 function initTeamMode() {
   const team = document.getElementById("team");
   if (!team) return;
   team.dataset.mode = TEAM_MODE === "named" ? "named" : "anonymous";
-  document.querySelectorAll(".team-named a[data-linkedin]").forEach((a) => {
-    const url = LINKEDIN[a.getAttribute("data-linkedin")];
-    if (url && !url.includes("REPLACE-ME")) a.href = url;
-    else a.style.display = "none"; // hide link until a real URL is provided
-  });
 }
 
 /* Reveal-on-scroll via IntersectionObserver */
