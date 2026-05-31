@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <title>Blue Horizon — wordmark</title>
+  <desc>Primary logo with "Blue Horizon" typeset top-left on two lines in Love Nature, soft-white fill.</desc>
+
+  <!-- Clip interior artwork to the square so the right mountain's acute corner miter cannot overshoot the frame. -->
+  <defs>
+    <clipPath id="frame">
+      <rect x="48" y="48" width="416" height="416"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect x="48" y="48" width="416" height="416" fill="#0961BC"/>
+
+    <text x="78" y="140"
+      font-family="Love Nature, 'Helvetica Neue', Arial, sans-serif"
+      font-weight="400" font-size="68" letter-spacing="0"
+      text-anchor="start" fill="#E3EEFB">Blue</text>
+    <text x="78" y="210"
+      font-family="Love Nature, 'Helvetica Neue', Arial, sans-serif"
+      font-weight="400" font-size="68" letter-spacing="0"
+      text-anchor="start" fill="#E3EEFB">Horizon</text>
+
+    <polygon points="236,464 464,464 350,350"
+      fill="#E3EEFB" stroke="#2A3240" stroke-width="6"
+      stroke-linejoin="miter" stroke-miterlimit="10"/>
+    <polygon points="48,370 150,268 346,464 48,464"
+      fill="#E3EEFB" stroke="none"/>
+    <polyline points="48,370 150,268 319,437"
+      fill="none" stroke="#2A3240" stroke-width="6"
+      stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="10"/>
+  </g>
+
+  <rect x="48" y="48" width="416" height="416"
+    fill="none" stroke="#2A3240" stroke-width="6" stroke-linejoin="miter"/>
+</svg>
