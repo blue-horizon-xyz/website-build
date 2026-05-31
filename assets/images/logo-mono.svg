@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <title>Blue Horizon — monochrome</title>
+  <desc>Single-colour variant for print, fax, embroidery, or any single-ink context. Graphite sky, white mountains, graphite strokes.</desc>
+
+  <!-- Clip all interior artwork to the square so the right mountain's acute corner miter cannot overshoot the frame. -->
+  <defs>
+    <clipPath id="frame">
+      <rect x="48" y="48" width="416" height="416"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- Sky in graphite -->
+    <rect x="48" y="48" width="416" height="416" fill="#2A3240"/>
+
+    <!-- Right mountain (back) -->
+    <polygon
+      points="236,464 464,464 350,350"
+      fill="#FFFFFF"
+      stroke="#2A3240"
+      stroke-width="6"
+      stroke-linejoin="miter"
+      stroke-miterlimit="10"/>
+
+    <!-- Left mountain fill (front, no stroke) -->
+    <polygon
+      points="48,370 150,268 346,464 48,464"
+      fill="#FFFFFF"
+      stroke="none"/>
+
+    <!-- Left mountain visible stroke (partway into the right mountain) -->
+    <polyline
+      points="48,370 150,268 319,437"
+      fill="none"
+      stroke="#2A3240"
+      stroke-width="6"
+      stroke-linejoin="miter"
+      stroke-linecap="round"
+      stroke-miterlimit="10"/>
+  </g>
+
+  <!-- Square border -->
+  <rect
+    x="48" y="48" width="416" height="416"
+    fill="none"
+    stroke="#2A3240"
+    stroke-width="6"
+    stroke-linejoin="miter"/>
+</svg>

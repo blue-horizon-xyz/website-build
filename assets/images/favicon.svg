@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="48 48 416 416" width="512" height="512" fill="none">
+  <title>Blue Horizon favicon</title>
+  <desc>Stroke-less favicon variant — same composition and 1:1 mountain slopes as the main logo, cropped to remove the outer border for clean small-size rendering.</desc>
+
+  <!-- Sky -->
+  <rect x="48" y="48" width="416" height="416" fill="#0961BC"/>
+
+  <!-- Right mountain (back) -->
+  <polygon points="236,464 464,464 350,350" fill="#E3EEFB"/>
+
+  <!-- Left mountain (front) -->
+  <polygon points="48,370 150,268 346,464 48,464" fill="#E3EEFB"/>
+</svg>
