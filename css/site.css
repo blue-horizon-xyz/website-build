@@ -182,13 +182,15 @@ strong { font-weight: 700; }
   display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 48px; align-items: center;
   padding-bottom: 120px;
 }
+.hero-copy { min-width: 0; }   /* allow the column to shrink below its widest word */
 .hero-logo { width: min(300px, 70%); margin: 0 auto; filter: drop-shadow(0 10px 30px rgba(0,0,0,.18)); }
 .hero h1 {
   font-family: var(--display-font);
   color: var(--white);
-  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  font-size: clamp(1.8rem, 8vw, 4.6rem);
   line-height: 1.02; letter-spacing: 0.01em;
   margin: 0 0 22px;
+  overflow-wrap: break-word;   /* let long words (INFRASTRUCTURE) wrap, never clip */
 }
 .hero .tagline {
   font-size: clamp(1.1rem, 1.8vw, 1.4rem);
