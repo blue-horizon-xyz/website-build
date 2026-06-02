@@ -16,7 +16,7 @@ const TEAM_MODE = "anonymous";
 // Web3Forms access key. Get one free at https://web3forms.com (enter
 // contact@blue-horizon.xyz, confirm once). Paste the key here.
 // While left as the placeholder, the form falls back to a mailto: draft.
-const WEB3FORMS_KEY = "REPLACE-WITH-WEB3FORMS-ACCESS-KEY";
+const WEB3FORMS_KEY = "2cbf631b-3fcd-4bcb-8cfb-109f07e2643d";
 
 const CONTACT_EMAIL = "contact@blue-horizon.xyz";
 
